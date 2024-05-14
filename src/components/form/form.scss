@@ -1,0 +1,213 @@
+.admin {
+    padding: 80px 0;
+
+    &__user-btn {
+        border: none;
+        background-color: transparent;
+    }
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 80px;
+
+        &-text:nth-child(1) {
+            color: gray;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+
+            span {
+                color: black;
+            }
+        }
+
+        &-text:nth-child(2) {
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+
+            span {
+                color: #db4444;
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    &__left {
+
+        &__title {
+            margin-bottom: 16px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding-left: 20px;
+            margin-bottom: 24px;
+        }
+
+        &__link {
+            color: gray;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: #db4444;
+            }
+        }
+    }
+
+    &__logout__btn {
+        border: none;
+        border-radius: 4px;
+        padding: 8px 16px;
+        background-color: #db4444;
+        color: #fafafa;
+    }
+
+    &__right {
+        box-shadow: 0px 1px 13px 0px #0000000D;
+        padding: 40px 80px;
+        width: 80%;
+
+        &__title {
+            margin-bottom: 16px;
+            color: #db4444;
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+    }
+
+    &__form {
+
+        &__top {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 24px 50px;
+            margin-bottom: 24px;
+        }
+
+        &__input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        input {
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            width: 100%;
+            background: #F5F5F5;
+            color: gray;
+            padding: 13px 0;
+            padding-left: 16px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &__bottom {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        &__btns {
+            display: flex;
+            align-content: inherit;
+            justify-content: flex-end;
+            gap: 32px;
+        }
+
+        &__cancel-btn {
+            border: none;
+            background-color: transparent;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &__save__btn {
+            border: none;
+            border-radius: 4px;
+            background-color: #db4444;
+            color: #fafafa;
+            padding: 16px 48px;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+        }
+    }
+}
+
+@media (max-width: 1075px) {
+    .admin {
+        &__form {
+            &__top {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .admin {
+        &__bottom {
+            flex-direction: column;
+        }
+
+        &__left {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            width: 100%;
+
+            &__list {
+                padding-left: 0;
+            }
+        }
+
+        &__right {
+            width: 100%;
+            padding: 40px 20px;
+        }
+
+        &__form__btns {
+            flex-wrap: wrap-reverse;
+        }
+    }
+}

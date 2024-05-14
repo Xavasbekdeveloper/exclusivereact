@@ -1,0 +1,145 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+
+    &__container {
+        padding-top: 80px;
+        padding-bottom: 60px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+
+        &__title {
+            margin-bottom: 24px;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 28px;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    &__first-item {
+        a {
+            img {
+                margin-bottom: 24px;
+            }
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        &__input-box {
+            display: flex;
+            align-items: center;
+            border: 1.5px solid #fff;
+            border-radius: 4px;
+        }
+
+        &__input {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            padding: 12px 0;
+            padding-left: 16px;
+            padding-right: 5px;
+            color: #FAFAFA;
+
+            &::placeholder {
+                color: #FAFAFA;
+            }
+        }
+
+        &__btn {
+            border: none;
+            background-color: transparent;
+            padding: 12px 0;
+            padding-right: 12px;
+
+            svg {
+                font-size: 20px;
+                color: #fff;
+            }
+        }
+    }
+
+    &__five-item {
+        &__text {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 18px;
+            margin-bottom: 8px;
+        }
+
+        &__download__links {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 27px;
+        }
+
+        &__download__link {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        &__links {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+        border-top: 1px solid gray;
+
+        &__box {
+            display: flex;
+            align-items: flex-start;
+
+            p {
+                color: gray;
+
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+// @media (max-width: 1205px) {
+//     .footer {
+
+//         &__container {
+//             flex-wrap: wrap;
+//             gap: 25px;
+//         }
+//     }
+// }
