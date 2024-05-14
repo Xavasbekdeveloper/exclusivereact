@@ -7,6 +7,7 @@ import Login from "./pages/login";
 import Auth from "./pages/auth";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Details from "./pages/details";
 
 function App() {
   return (
@@ -19,7 +20,10 @@ function App() {
         <Route path="/" element={<Auth />}>
           <Route path="/admin" element={<Admin />} />
         </Route>
+
+        <Route path="/products/:id" element={<Details />} />
       </Routes>
+
       <Footer />
       <ToastContainer />
     </>

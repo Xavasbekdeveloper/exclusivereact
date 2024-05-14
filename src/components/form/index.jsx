@@ -1,6 +1,15 @@
 import React, { memo } from "react";
+import "./form.scss";
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
+  const navigate = useNavigate();
+
+  const handleLogOut = () => {
+    localStorage.removeItem("x-auth-token");
+    navigate("/login");
+  };
+
   return (
     <section className="admin">
       <div className="container admin__container">
@@ -54,7 +63,9 @@ const Form = () => {
               <h3 className="admin__left__title">My WishList</h3>
             </div>
             <div className="admin__left-item">
-              <button className="admin__logout__btn">Log Out</button>
+              <button onClick={handleLogOut} className="admin__logout__btn">
+                Log Out
+              </button>
             </div>
           </div>
 
@@ -63,15 +74,15 @@ const Form = () => {
             <form action="" className="admin__form">
               <div className="admin__form__top">
                 <div className="admin__form__input-group">
-                  <label for="fname">First Name</label>
+                  <label htmlFor="fname">First Name</label>
                   <input id="fname" type="text" placeholder="Md" />
                 </div>
                 <div className="admin__form__input-group">
-                  <label for="lname">Last Name</label>
+                  <label htmlFor="lname">Last Name</label>
                   <input id="lname" type="text" placeholder="Last Name" />
                 </div>
                 <div className="admin__form__input-group">
-                  <label for="email">Email</label>
+                  <label htmlFor="email">Email</label>
                   <input
                     id="email"
                     type="email"
@@ -79,7 +90,7 @@ const Form = () => {
                   />
                 </div>
                 <div className="admin__form__input-group">
-                  <label for="address">Address</label>
+                  <label htmlFor="address">Address</label>
                   <input
                     id="address"
                     type="text"
@@ -88,7 +99,7 @@ const Form = () => {
                 </div>
               </div>
               <div className="admin__form__bottom">
-                <label for="">Password Changes</label>
+                <label htmlFor="">Password Changes</label>
                 <input type="password" placeholder="Current Password" />
                 <input type="password" placeholder="New Password" />
                 <input type="password" placeholder="Confirm New Password" />
