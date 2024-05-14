@@ -61,35 +61,43 @@ const Form = () => {
           <div className="admin__right">
             <h2 className="admin__right__title">Edit Your Profile</h2>
             <form action="" className="admin__form">
-                        <div className="admin__form__top">
-                            <div className="admin__form__input-group">
-                                <label for="fname">First Name</label>
-                                <input id="fname" type="text" placeholder="Md">
-                            </div>
-                            <div className="admin__form__input-group">
-                                <label for="lname">Last Name</label>
-                                <input id="lname" type="text" placeholder="Last Name">
-                            </div>
-                            <div className="admin__form__input-group">
-                                <label for="email">Email</label>
-                                <input id="email" type="email" placeholder="rimel1111@gmail.com">
-                            </div>
-                            <div className="admin__form__input-group">
-                                <label for="address">Address</label>
-                                <input id="address" type="text" placeholder="Kingston, 5236, United State">
-                            </div>
-                        </div>
-                        <div className="admin__form__bottom">
-                            <label for="">Password Changes</label>
-                            <input type="password" placeholder="Current Password">
-                            <input type="password" placeholder="New Password">
-                            <input type="password" placeholder="Confirm New Password">
-                        </div>
-                        <div className="admin__form__btns">
-                            <button className="admin__form__cancel-btn">Cancel</button>
-                            <button className="admin__form__save__btn">Save Changes</button>
-                        </div>
-                    </form>
+              <div className="admin__form__top">
+                <div className="admin__form__input-group">
+                  <label for="fname">First Name</label>
+                  <input id="fname" type="text" placeholder="Md" />
+                </div>
+                <div className="admin__form__input-group">
+                  <label for="lname">Last Name</label>
+                  <input id="lname" type="text" placeholder="Last Name" />
+                </div>
+                <div className="admin__form__input-group">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="rimel1111@gmail.com"
+                  />
+                </div>
+                <div className="admin__form__input-group">
+                  <label for="address">Address</label>
+                  <input
+                    id="address"
+                    type="text"
+                    placeholder="Kingston, 5236, United State"
+                  />
+                </div>
+              </div>
+              <div className="admin__form__bottom">
+                <label for="">Password Changes</label>
+                <input type="password" placeholder="Current Password" />
+                <input type="password" placeholder="New Password" />
+                <input type="password" placeholder="Confirm New Password" />
+              </div>
+              <div className="admin__form__btns">
+                <button className="admin__form__cancel-btn">Cancel</button>
+                <button className="admin__form__save__btn">Save Changes</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
